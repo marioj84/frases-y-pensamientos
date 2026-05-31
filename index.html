@@ -6,76 +6,98 @@
   <title>Frases y Pensamientos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">Frases y Pensamientos</a>
     <nav class="nav">
-      <a href="index.html">Inicio</a>
+      <a class="active" href="index.html">Inicio</a>
       <a href="filosofos.html">Filósofos</a>
       <a href="corrientes.html">Corrientes</a>
       <a href="blog.html">Blog</a>
-      <a class="nav-cta" href="analizador.html">Analizar frase</a>
+      <a class="nav-cta" href="analizador.html">Entrar en la duda</a>
     </nav>
     <button class="menu-btn" id="menuBtn">☰</button>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero compact-hero">
       <div class="hero-content">
-        <p class="eyebrow">Biblioteca viva de ideas</p>
-        <h1>Un lugar para buscar frases, entender corrientes y escribir tus propios pensamientos.</h1>
-        <p class="hero-text">Explora filósofos, corrientes filosóficas y reflexiones personales conectadas por ideas como libertad, sentido, virtud, duda, felicidad y existencia.</p>
+        <p class="eyebrow">Un archivo para ideas que todavía preguntan</p>
+        <h1>Piensa una frase. Sigue el hilo.</h1>
+        <p class="hero-text">Una página para buscar, escribir y conectar pensamientos con corrientes filosóficas, autores y preguntas humanas.</p>
         <div class="search-box large">
-          <input id="homeSearch" type="text" placeholder="Busca una frase, autor, corriente o idea..." />
-          <button id="homeSearchBtn">Buscar</button>
+          <input id="homeSearch" type="text" placeholder="Escribe una duda, una frase o una idea que no te deja tranquilo..." />
+          <button id="homeSearchBtn">Explorar</button>
+        </div>
+        <div class="quick-topics">
+          <span>Libertad</span><span>Sentido</span><span>Dolor</span><span>Virtud</span><span>Deseo</span><span>Muerte</span><span>Voluntad</span>
         </div>
         <div id="homeResults" class="results"></div>
       </div>
-      <div class="hero-card">
-        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80" alt="Libros abiertos sobre una mesa" />
-        <div class="quote-card">
-          <p>“La vida no examinada no merece ser vivida.”</p>
-          <span>Sócrates · Filosofía clásica</span>
+      <div class="hero-card thought-hero-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Paisaje oscuro y contemplativo" />
+        <div class="quote-card daily-card">
+          <p id="dailyQuote">“La vida no examinada no merece ser vivida.”</p>
+          <span id="dailyAuthor">Sócrates · Filosofía clásica</span>
         </div>
       </div>
     </section>
 
-    <section class="section intro-grid">
+    <section class="section question-section">
+      <p class="eyebrow">Navega por preguntas, no solo por categorías</p>
+      <h2>¿Por dónde quieres empezar a pensar?</h2>
+      <div id="questionGrid" class="question-grid"></div>
+    </section>
+
+    <section class="section intro-grid path-grid">
       <article class="feature-card">
-        <h2>Filósofos</h2>
-        <p>Conoce autores esenciales y navega sus ideas principales.</p>
-        <a href="filosofos.html">Explorar autores →</a>
+        <p class="eyebrow">Primer camino</p>
+        <h2>Buscar una frase</h2>
+        <p>Encuentra ideas por autor, corriente, concepto u origen.</p>
+        <a href="analizador.html">Entrar en la duda →</a>
       </article>
       <article class="feature-card">
-        <h2>Corrientes</h2>
-        <p>Ordena las frases y escritos según escuelas de pensamiento.</p>
-        <a href="corrientes.html">Ver corrientes →</a>
+        <p class="eyebrow">Segundo camino</p>
+        <h2>Explorar una corriente</h2>
+        <p>Mira cada escuela como una forma de enfrentar la vida.</p>
+        <a href="corrientes.html">Seguir el hilo →</a>
       </article>
       <article class="feature-card">
-        <h2>Analizador</h2>
-        <p>Pega una frase y obtén una aproximación filosófica inicial.</p>
-        <a href="analizador.html">Probar analizador →</a>
+        <p class="eyebrow">Tercer camino</p>
+        <h2>Escribir un pensamiento</h2>
+        <p>Parte desde una frase propia y descubre con qué tradición conversa.</p>
+        <a href="blog.html">Abrir reflexión →</a>
       </article>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Pensamientos para perderse</p>
+      <h2>Puertas pequeñas hacia preguntas grandes.</h2>
+      <div id="doorGrid" class="door-grid"></div>
     </section>
 
     <section class="section split-section">
       <div>
-        <p class="eyebrow">Idea central</p>
-        <h2>No es solo una página de frases. Es un mapa de ideas.</h2>
-        <p>La intención es que cada frase, autor y artículo se conecte con conceptos mayores. Así, un pensamiento sobre libertad puede llevarte al existencialismo, a Sartre, a Nietzsche o a un escrito personal tuyo.</p>
+        <p class="eyebrow">Archivo de ideas</p>
+        <h2>No ordenar por tema. Ordenar por tensión.</h2>
+        <p>Cada idea puede tener una raíz, una corriente, un autor cercano y una tensión interna. Ahí empieza lo interesante.</p>
       </div>
-      <div class="concept-cloud">
-        <span>Libertad</span><span>Virtud</span><span>Destino</span><span>Duda</span><span>Sentido</span><span>Disciplina</span><span>Felicidad</span><span>Existencia</span>
-      </div>
+      <div id="archiveGrid" class="archive-grid"></div>
+    </section>
+
+    <section class="section map-section">
+      <p class="eyebrow">Mapa de pensamiento</p>
+      <h2>Una idea lleva a otra.</h2>
+      <div id="mapGrid" class="map-grid"></div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Frases y Pensamientos · Versión 1</p>
-    <p>Un proyecto para ordenar ideas, corrientes y reflexiones propias.</p>
+    <p>Frases y Pensamientos · Versión 1.2</p>
+    <p>Una página para entrar en una pregunta, no para salir rápido con una respuesta.</p>
   </footer>
 
   <script src="script.js"></script>
