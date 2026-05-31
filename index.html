@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frases y Pensamientos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Frases y Pensamientos</a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="filosofos.html">Filósofos</a>
+      <a href="corrientes.html">Corrientes</a>
+      <a href="blog.html">Blog</a>
+      <a class="nav-cta" href="analizador.html">Analizar frase</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Biblioteca viva de ideas</p>
+        <h1>Un lugar para buscar frases, entender corrientes y escribir tus propios pensamientos.</h1>
+        <p class="hero-text">Explora filósofos, corrientes filosóficas y reflexiones personales conectadas por ideas como libertad, sentido, virtud, duda, felicidad y existencia.</p>
+        <div class="search-box large">
+          <input id="homeSearch" type="text" placeholder="Busca una frase, autor, corriente o idea..." />
+          <button id="homeSearchBtn">Buscar</button>
+        </div>
+        <div id="homeResults" class="results"></div>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80" alt="Libros abiertos sobre una mesa" />
+        <div class="quote-card">
+          <p>“La vida no examinada no merece ser vivida.”</p>
+          <span>Sócrates · Filosofía clásica</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-grid">
+      <article class="feature-card">
+        <h2>Filósofos</h2>
+        <p>Conoce autores esenciales y navega sus ideas principales.</p>
+        <a href="filosofos.html">Explorar autores →</a>
+      </article>
+      <article class="feature-card">
+        <h2>Corrientes</h2>
+        <p>Ordena las frases y escritos según escuelas de pensamiento.</p>
+        <a href="corrientes.html">Ver corrientes →</a>
+      </article>
+      <article class="feature-card">
+        <h2>Analizador</h2>
+        <p>Pega una frase y obtén una aproximación filosófica inicial.</p>
+        <a href="analizador.html">Probar analizador →</a>
+      </article>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">Idea central</p>
+        <h2>No es solo una página de frases. Es un mapa de ideas.</h2>
+        <p>La intención es que cada frase, autor y artículo se conecte con conceptos mayores. Así, un pensamiento sobre libertad puede llevarte al existencialismo, a Sartre, a Nietzsche o a un escrito personal tuyo.</p>
+      </div>
+      <div class="concept-cloud">
+        <span>Libertad</span><span>Virtud</span><span>Destino</span><span>Duda</span><span>Sentido</span><span>Disciplina</span><span>Felicidad</span><span>Existencia</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Frases y Pensamientos · Versión 1</p>
+    <p>Un proyecto para ordenar ideas, corrientes y reflexiones propias.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
