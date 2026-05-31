@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filósofos | Frases y Pensamientos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Frases y Pensamientos</a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="filosofos.html">Filósofos</a>
+      <a href="corrientes.html">Corrientes</a>
+      <a href="blog.html">Blog</a>
+      <a class="nav-cta" href="analizador.html">Analizar frase</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Autores esenciales</p>
+      <h1>Filósofos para navegar ideas.</h1>
+      <p>Esta sección reúne pensadores clave y los conecta con corrientes, conceptos y preguntas humanas. Las imágenes son referenciales y pueden reemplazarse luego.</p>
+    </section>
+
+    <section class="page-tools">
+      <div class="search-box">
+        <input id="globalSearch" type="text" placeholder="Busca Sócrates, virtud, sentido, libertad..." />
+        <button id="globalSearchBtn">Buscar</button>
+      </div>
+      <div id="globalResults" class="results"></div>
+    </section>
+
+    <section id="philosophersGrid" class="cards-grid section"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Frases y Pensamientos · Filósofos</p>
+    <p>Mapa inicial de autores y conceptos.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
